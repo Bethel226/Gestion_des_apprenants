@@ -1,0 +1,29 @@
+*{
+	margin: 5px;
+	padding: 5px;
+}
+.btn_b{
+	background-color: white;
+	width: 150px;
+	border: none;
+	border-radius: 3px;
+	height: 35px;
+}
+.navbar-brand_b{
+	border-radius: 3px;
+	width: 150px;
+}
+table {
+ border-collapse:collapse;
+ width:90%;
+ }
+th, td {
+ border:1px solid black;
+ width:10%;
+ }
+td {
+ text-align:center;
+ }
+caption {
+ font-weight:bold
+ }
