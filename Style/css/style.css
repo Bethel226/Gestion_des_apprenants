@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;600;700&display=swap');
 *{
 	margin: 5px;
 	padding: 5px;
@@ -13,17 +14,9 @@
 	border-radius: 3px;
 	width: 150px;
 }
-table {
- border-collapse:collapse;
- width:90%;
- }
-th, td {
- border:1px solid black;
- width:10%;
- }
-td {
- text-align:center;
- }
-caption {
- font-weight:bold
- }
+ tr, td
+{
+border: 1px solid black;
+border-collapse: collapse;
+text-align: center;
+}

@@ -4,43 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>App</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../Style/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Lobster&family=Merriweather&family=Poppins&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading1">First</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading2">Second</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
-              <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-        <h4 id="scrollspyHeading1">First heading</h4>
-        <p>...</p>
-        <h4 id="scrollspyHeading2">Second heading</h4>
-        <p>...</p>
-        <h4 id="scrollspyHeading3">Third heading</h4>
-        <p>...</p>
-        <h4 id="scrollspyHeading4">Fourth heading</h4>
-        <p>...</p>
-        <h4 id="scrollspyHeading5">Fifth heading</h4>
-        <p>...</p>
+<?php include 'Page/menu_index.php'; ?>
+  <div class="container-fluid bg-danger mt-3 d-flex w-100"> 
+      <div class="bg-light w-30">
+          <h1 class="text-center mb-5" style="font-family: 'Lobster', 'cursive'; font-size: 4rem;">Bienvenue dans la gestion des apprenants de Simplon.Co</h1>
+          <p class="text-center text-danger" style="font-family: 'Lobster', 'cursive'; font-size: 2rem;">La solution pour un meilleur suivi des apprenants!</p> 
       </div>
-      
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <div class="w-70">
+          <img src="Style/Images/accueil.Jpeg" style="height:460px " alt="">
+      </div>
+  </div>
+    <?php include 'Page/foot.php'; ?>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
 </body>
 </html>
