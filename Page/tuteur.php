@@ -48,7 +48,7 @@
   <th>Prenom</th>
   <th>Telephone</th>
   <th>Adresse</th>
-  <th>Sexe</th>
+  <th>Genre</th>
   <th>Profession</th>
  </tr>
  <tr>
