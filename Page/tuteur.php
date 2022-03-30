@@ -20,7 +20,7 @@
             <input type="text" class="form-control" placeholder="Prenom" name="prenom" autocomplete="off">
           </div>
           <div class="mb-3">
-            <select class="form-select mb-3" aria-label="Default select example" name="Genre">
+            <select class="form-select mb-3" aria-label="Default select example" name="genre">
                     <option value="Homme">Homme</option>
                     <option value="Femme">Femme</option>
               </select>
@@ -94,7 +94,7 @@ foreach ($data as $donnee) {
             ?>
   </tbody>
 </table> <br>
-<button type="submit" class="btn btn-outline-danger mb-3"  name="valider">Imprimer</button>
+<button onclick="print();" class="btn btn-outline-danger mb-3"  name="valider">Imprimer</button>
 </div>
 <?php include 'foot.php'; ?>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
