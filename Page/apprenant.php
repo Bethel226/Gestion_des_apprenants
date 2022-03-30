@@ -27,7 +27,7 @@
               <input type="text" class="form-control" name="adresse" placeholder="Adresse" autocomplete="off">
             </div>
           <div class="mb-3">
-            <select class="form-select mb-3" aria-label="Default select example" name="genre">
+            <select class="form-select" aria-label="Default select example" name="genre">
                     <option value="Homme">Homme</option>
                     <option value="Femme">Femme</option>
               </select>
