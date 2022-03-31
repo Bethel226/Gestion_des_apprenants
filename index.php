@@ -11,16 +11,16 @@
 </head>
 <body>
 <?php include 'Page/menu_index.php'; ?>
-  <div class="container-fluid bg-danger mt-3 d-flex w-100"> 
-      <div class="bg-light w-30">
+  <div class="container-fluid bg-danger p-5 mt-3 d-flex w-100"> 
+      <div class="bg-light w-20">
           <h1 class="text-center mb-5" style="font-family: 'Lobster', 'cursive'; font-size: 4rem;">Bienvenue dans la gestion des apprenants de Simplon.Co</h1>
           <p class="text-center text-danger" style="font-family: 'Lobster', 'cursive'; font-size: 2rem;">La solution pour un meilleur suivi des apprenants!</p> 
       </div>
-      <div class="w-70">
+      <div class="w-80">
           <img src="Style/Images/accueil.Jpeg" style="height:460px " alt="">
       </div>
   </div>
-    <?php include 'Page/foot.php'; ?>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+  <?php include 'Page/foot.php' ?>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
 </body>
 </html>

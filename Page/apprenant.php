@@ -11,9 +11,10 @@
 <body>
 
 <?php include 'menu.php'; ?>
-<h4 class="mt-3">Informations apprenant</h4>
+<div class="container">
+  <h4 class="mt-3 text-center">Informations apprenant</h4>
 <div class="container-fluid shadow p-2 bg-body rounded" bg-primary>
-        <form action="insertion_apprenant.php" method="post" style="margin:5px">
+        <form action="insertion_apprenant.php" method="post">
           <div class="mb-3">
             <input type="text" class="form-control" placeholder="Nom" name="nom" autocomplete="off">
           </div>
@@ -21,13 +22,14 @@
             <input type="text" class="form-control" placeholder="Prenom" name="prenom" autocomplete="off">
           </div>
           <div class="mb-3">
-            <input type="number" class="form-control" name="telephone" placeholder="Telephone" autocomplete="off">
+            <input type="number" class="form-control" name="telephone" placeholder="Telephone" min="0" autocomplete="off">
           </div>
           <div class="mb-3">
               <input type="text" class="form-control" name="adresse" placeholder="Adresse" autocomplete="off">
             </div>
           <div class="mb-3">
-            <select class="form-select" aria-label="Default select example" name="genre">
+            <select class="form-select" aria-label="Default select example" name="genre" style="color: gray;">
+                    <option value="0" selected="selected">Genre</option>
                     <option value="Homme">Homme</option>
                     <option value="Femme">Femme</option>
               </select>
@@ -37,6 +39,7 @@
             </div>
           <div class="mb-3">
               <select class="form-select mb-3" aria-label="Default select example" name="idTuteur">
+                      <option value="0" selected="selected">Selectionner le tuteur</option>
                 <?php
 
                   try {
@@ -59,8 +62,8 @@
     </form> 
     </div>  
 
-<div class="container-fluid shadow p-2 bg-body rounded">
-      <h4 class="mt-3">Liste des apprenants</h4>
+<div class="container shadow p-2 bg-body rounded">
+      <h4 class="mt-3 text-center">Liste des apprenants</h4>
       <table class="table table bordered " border="1" >
   <thead class="table bg-danger text-light">
     <tr>
@@ -115,6 +118,7 @@
   </tbody>
 </table> <br>
 <button onclick="print();" class="btn btn-outline-danger mb-3"  name="valider">Imprimer</button>
+</div>
 </div>
 <?php include 'foot.php'; ?>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  

@@ -10,8 +10,8 @@
 </head>
 <body>
 <?php include 'menu.php'; ?>
-<h4 class="mt-3">Informations tuteur</h4>
-<div class="container-fluid shadow p-2 bg-body rounded">
+<h4 class="mt-3 text-center">Informations tuteur</h4>
+<div class="container shadow p-2 bg-body rounded">
         <form action="insertion_tuteur.php" method="post" style="margin:5px">
           <div class="mb-3">
             <input type="text" class="form-control" placeholder="Nom" name="nom" autocomplete="off">
@@ -20,7 +20,8 @@
             <input type="text" class="form-control" placeholder="Prenom" name="prenom" autocomplete="off">
           </div>
           <div class="mb-3">
-            <select class="form-select mb-3" aria-label="Default select example" name="genre">
+            <select class="form-select mb-3" aria-label="Default select example" name="genre" style="color: gray;">
+                    <option value="0" selected="selected">Genre</option>
                     <option value="Homme">Homme</option>
                     <option value="Femme">Femme</option>
               </select>
@@ -29,7 +30,7 @@
             <input type="text" class="form-control" name="profession" placeholder="Profession" autocomplete="off">
           </div>
           <div class="mb-3">
-            <input type="number" class="form-control" name="telephone" placeholder="Telephone" autocomplete="off">
+            <input type="number" class="form-control" name="telephone" placeholder="Telephone" min="0" autocomplete="off">
           </div>
             <div class="mb-3">
               <input type="text" class="form-control" name="adresse" placeholder="Adresse" autocomplete="off">
@@ -41,8 +42,8 @@
             <button type="reset" class="btn btn-outline-danger"  name="valider">Annuler</button>
     </form> 
     </div>   
-<div class="container-fluid shadow p-2 bg-body rounded bt-3">
-   <h4>Liste des tuteurs</h4>
+<div class="container shadow p-2 bg-body rounded bt-3">
+   <h4 class="text-center">Liste des tuteurs</h4>
       <table class="table table bordered " border="1" >
   <thead class="table bg-danger text-light">
     <tr>
